@@ -1,0 +1,130 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<button type="button" class="btn btn-secondary" id="logout" type="logout" value="Log Out"><a href="/logout">Log Out!</a></button>
+	</div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+			{{!-- gnome animation --}}
+			<div style="position:relative">
+        		<div id="b" style="position:absolute;">
+            		<img src="../assets/images/gnome.png" alt="gnome">
+        		</div>
+    		</div>
+	<div class="row">
+		<div class="col-md-12">
+
+		</div>
+
+		<!--header-->
+		<div class="header-w3l">
+			<h1>Welcome, {{username}}</h1>
+		</div>
+
+		<!-- Page Features -->
+		<div class="row text-center">
+
+
+
+		<!-- email -->
+		<div class="col-lg-4 col-md-6 mb-4 sports">
+			<div id="effect" class="card">
+				<div class="card-body">
+					<div class="sub-main-w3" id="d1">
+						<h3>Gmail
+							<img class="card-img-top" id='email-img' src="../assets/images/gmail.png" alt="">
+						</h3>
+
+						<div class="row">
+							{{!-- <ul>
+								<li>{{{email}}}</li>
+							</ul> --}}
+							<dl>
+  <dt><a href="https://mail.google.com">Message One</a></dt>
+  <dd>-From: Michael Ignaczak, mikeignaczak@gmail.com  <br> -Subject: Slides To An Awesome Pitch Presentation Template - Invitation to edit</dd>
+ <dt><a href="https://mail.google.com">Message Two</a></dt>
+  <dd>-From: Twitter, verify@twitter.com <br> -Subject: Confirm your Twitter account, Papays</dd>
+   <dt><a href="https://mail.google.com">Message Three</a></dt>
+  <dd>-From: support@newsapi.org <br> -Subject: News API registration complete!</dd>
+   <dt><a href="https://mail.google.com">Message Four</a></dt>
+  <dd>-From: OMW Team, info@openweathermap.org <br> -Subject:  OpenWeatherMap Create Account</dd>
+</dl>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="btn btn-primary">Go to Gmail</a>
+				</div>
+			</div>
+		</div>
+				<!-- calendar -->
+		<div class="col-lg-4 col-md-4 mb-4 sports">
+			<div id="effect" class="calendar-card">
+				<div class="card-body">
+					<div class="sub-main-w3" id="d2">
+						<h3>Calendar
+							<img class="card-img-top" id='email-img' src="../assets/images/gcalendar.png" alt="">
+						</h3>
+						{{!-- <img class="card-img-top" src="{{logo}}" alt=""> --}}
+						<iframe src="{{calendar}}"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- weather -->
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div id="effect" class="card">
+					<div class="card-body">
+						<div class="sub-main-w3" id="d2">
+							<div class="row">
+								<h2>{{city}}</h2>
+							</div>
+							<div id="icon" class="row">
+								{{{weatherIcon}}}
+							</div>
+							<div class="row">
+								<h2>{{weather}}</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- news -->
+			<div class="col-lg-4 col-md-6 mb-4 sports">
+				<div id="effect" class="card">
+					<div class="card-body">
+						<div class="sub-main-w3" id="d3">
+							<h2>BBC News</h2>
+							<div class="news">
+								<ul>{{{news}}}</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- sports -->
+			<div class="col-lg-4 col-md-6 mb-4 sports">
+				<div id="effect" class="card">
+					<div class="card-body">
+						<div class="sub-main-w3" id="d4">
+							<h2>Sports</h2>
+							<img class="card-img-top" src="{{logo}}" alt="">
+							<div>
+								<ul>{{{sports}}}</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<p>&copy; 2018 The Gnome Page. All rights reserved | Design by
+			<a href="https://github.com/petercboss/Papayas-Project-2">Papayas-Project-2</a>
+		</p>
+	</div>
+</div>
